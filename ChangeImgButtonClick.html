@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<img src="pic1.jp" width="500px" height="600px" id="myimg">
+<br>
+<input type="button" onclick="changeimg()" value="change"/>
+<script>
+ function changeimg(){
+    var Image_Id=document.getElementById('myimg')
+    if(Image_Id.src.match("pic1.jpg")){
+   Image_Id.src="pic2.jpg";
+ }
+else{
+  Image_Id.src="pic1.jpg";
+}
+}
+</script>
+</body>
+</html>
